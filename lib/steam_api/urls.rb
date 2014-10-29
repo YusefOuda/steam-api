@@ -44,5 +44,9 @@ module SteamApi
     def self.global_achievement_percentages_for_app(id)
       "http://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?&gameid=" + id
     end
+
+    def self.number_of_current_players(id)
+      "http://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=" + id
+    end
   end
 end

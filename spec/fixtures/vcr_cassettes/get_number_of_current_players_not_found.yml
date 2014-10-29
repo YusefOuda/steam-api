@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=<API_KEY>&vanityurl=youda
+    uri: http://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=12345
     body:
       encoding: US-ASCII
       string: ''
@@ -17,21 +17,20 @@ http_interactions:
       - api.steampowered.com
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Date:
-      - Wed, 29 Oct 2014 23:41:41 GMT
+      - Wed, 29 Oct 2014 23:43:04 GMT
       Expires:
-      - Wed, 29 Oct 2014 23:41:41 GMT
+      - Wed, 29 Oct 2014 23:43:04 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '70'
+      - '36'
     body:
       encoding: UTF-8
-      string: "{\n\t\"response\": {\n\t\t\"steamid\": \"76561197995163285\",\n\t\t\"success\":
-        1\n\t}\n}"
+      string: "{\n\t\"response\": {\n\t\t\"result\": 42\n\t}\n}"
     http_version: 
-  recorded_at: Wed, 29 Oct 2014 23:41:42 GMT
+  recorded_at: Wed, 29 Oct 2014 23:43:04 GMT
 recorded_with: VCR 2.9.3

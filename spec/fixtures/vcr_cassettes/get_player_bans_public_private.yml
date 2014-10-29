@@ -21,20 +21,20 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Oct 2014 20:01:42 GMT
+      - Wed, 29 Oct 2014 23:41:39 GMT
       Expires:
-      - Wed, 29 Oct 2014 20:01:42 GMT
+      - Wed, 29 Oct 2014 23:41:39 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
       - '363'
     body:
       encoding: UTF-8
-      string: "{\n\t\"players\": [\n\t\t{\n\t\t\t\"SteamId\": \"76561197995163285\",\n\t\t\t\"CommunityBanned\":
+      string: "{\n\t\"players\": [\n\t\t{\n\t\t\t\"SteamId\": \"76561198002572492\",\n\t\t\t\"CommunityBanned\":
         false,\n\t\t\t\"VACBanned\": false,\n\t\t\t\"NumberOfVACBans\": 0,\n\t\t\t\"DaysSinceLastBan\":
-        0,\n\t\t\t\"EconomyBan\": \"none\"\n\t\t},\n\t\t{\n\t\t\t\"SteamId\": \"76561198002572492\",\n\t\t\t\"CommunityBanned\":
+        0,\n\t\t\t\"EconomyBan\": \"none\"\n\t\t},\n\t\t{\n\t\t\t\"SteamId\": \"76561197995163285\",\n\t\t\t\"CommunityBanned\":
         false,\n\t\t\t\"VACBanned\": false,\n\t\t\t\"NumberOfVACBans\": 0,\n\t\t\t\"DaysSinceLastBan\":
         0,\n\t\t\t\"EconomyBan\": \"none\"\n\t\t}\n\t]\n\t\n}"
     http_version: 
-  recorded_at: Wed, 29 Oct 2014 20:01:45 GMT
+  recorded_at: Wed, 29 Oct 2014 23:41:40 GMT
 recorded_with: VCR 2.9.3

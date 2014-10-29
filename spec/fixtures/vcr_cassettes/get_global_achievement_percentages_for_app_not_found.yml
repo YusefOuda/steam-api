@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=12345&key=<API_KEY>
+    uri: http://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=12345
     body:
       encoding: US-ASCII
       string: ''
@@ -21,9 +21,9 @@ http_interactions:
       message: Forbidden
     headers:
       Date:
-      - Wed, 29 Oct 2014 23:13:39 GMT
+      - Wed, 29 Oct 2014 23:41:43 GMT
       Expires:
-      - Wed, 29 Oct 2014 23:13:39 GMT
+      - Wed, 29 Oct 2014 23:41:43 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -35,5 +35,5 @@ http_interactions:
 
         }
     http_version: 
-  recorded_at: Wed, 29 Oct 2014 23:13:38 GMT
+  recorded_at: Wed, 29 Oct 2014 23:41:43 GMT
 recorded_with: VCR 2.9.3

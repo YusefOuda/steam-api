@@ -21,9 +21,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Oct 2014 21:30:24 GMT
+      - Wed, 29 Oct 2014 23:41:42 GMT
       Expires:
-      - Wed, 29 Oct 2014 21:30:24 GMT
+      - Wed, 29 Oct 2014 23:41:42 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -33,5 +33,5 @@ http_interactions:
       string: "{\n\t\"response\": {\n\t\t\"steamid\": \"76561198002572492\",\n\t\t\"success\":
         1\n\t}\n}"
     http_version: 
-  recorded_at: Wed, 29 Oct 2014 21:30:28 GMT
+  recorded_at: Wed, 29 Oct 2014 23:41:42 GMT
 recorded_with: VCR 2.9.3
