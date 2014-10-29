@@ -37,5 +37,12 @@ module SteamApi
     def self.vanity_url(vanity_url)
       "http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?&vanityurl=" + vanity_url
     end
+
+    # A helper method which gets the base url for API call to get global achievement percentages for app
+    # @param id [String] A single Steam app id
+    # @return [String] An interpolated string for the API call (without the API key)
+    def self.global_achievement_percentages_for_app(id)
+      "http://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?&gameid=" + id
+    end
   end
 end

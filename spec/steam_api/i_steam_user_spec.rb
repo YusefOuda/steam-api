@@ -11,7 +11,7 @@ describe SteamApi::ISteamUser do
     @client = SteamApi::Client.new(key)
   end
 
-  describe '.get_friend_list' do
+  describe '#get_friend_list' do
     it "returns a hash containing the user's friends" do
       VCR.use_cassette('get_friend_list_public') do
         result = @client.get_friend_list(@public_id)
@@ -46,7 +46,7 @@ describe SteamApi::ISteamUser do
     end
   end
 
-  describe '.get_player_bans' do
+  describe '#get_player_bans' do
     it "returns a hash containing information about a players ban history" do
       VCR.use_cassette('get_player_bans_public') do
         result = @client.get_player_bans(@public_id)
@@ -76,7 +76,7 @@ describe SteamApi::ISteamUser do
     end
   end
 
-  describe '.get_player_summaries' do
+  describe '#get_player_summaries' do
     it 'returns a hash containing a single players summary' do
       VCR.use_cassette('get_player_summaries_single') do
         result = @client.get_player_summaries(@public_id)
@@ -107,7 +107,7 @@ describe SteamApi::ISteamUser do
     end
   end
 
-  describe '.get_user_group_list' do
+  describe '#get_user_group_list' do
     it 'returns a hash which contains the users list of groups (public)' do
       VCR.use_cassette('get_user_group_list_public') do
         result = @client.get_user_group_list(@public_id)
@@ -137,7 +137,7 @@ describe SteamApi::ISteamUser do
     end
   end
 
-  describe '.resolve_vanity_url' do
+  describe '#resolve_vanity_url' do
     it 'returns a hash containing the users steam_id_64 (public user)' do
       VCR.use_cassette('resolve_vanity_url_public') do
         result = @client.resolve_vanity_url(@public_vanity)
