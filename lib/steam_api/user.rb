@@ -32,12 +32,21 @@ module SteamApi
       response = get(url, key_needed: true)
     end
 
-    # Gets a list of users groups if the user has a public profile
+    # Gets a list of users groups if the user has a public profile.
     # @param steamid [String] The user's steam_id_64
     # @return [Hash] Contains a hash with a list of the users groups
     # More information can be found at https://wiki.teamfortress.com/wiki/WebAPI/GetUserGroupList
     def get_user_group_list(steamid)
       url = SteamApi::Urls.user_group_list(steamid)
+      response = get(url, key_needed: true)
+    end
+
+    # Gets a users steam_id_64 from vanity url.
+    # @param vanity_url [String] Contains the vanity URL of a user
+    # @return [Hash] Contains a hash which has the steam_id_64 of the given user (if it exists)
+    # More information can be found at https://wiki.teamfortress.com/wiki/WebAPI/ResolveVanityURL
+    def resolve_vanity_url(vanity_url)
+      url = SteamApi::Urls.vanity_url(vanity_url)
       response = get(url, key_needed: true)
     end
   end

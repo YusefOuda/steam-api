@@ -2,6 +2,9 @@ describe SteamApi::ISteamUser do
   before(:all) do
     key = ENV['STEAM_KEY']
     @public_id = '76561197995163285'
+    @public_vanity = "youda"
+    @private_vanity = "blitzcat"
+    @notfound_vanity = "abcdefuhasadfdfujkad"
     @private_id = '76561198002572492'
     @notfound_id = '67734658237465083465238745693'
     @invalid_id = '76561199623423 72348002572492'
@@ -130,6 +133,30 @@ describe SteamApi::ISteamUser do
       VCR.use_cassette('get_user_group_list_not_found') do
         result = @client.get_user_group_list(@invalid_id)
         expect(result["error"]).to_not be_nil
+      end
+    end
+  end
+
+  describe '.resolve_vanity_url' do
+    it 'returns a hash containing the users steam_id_64 (public user)' do
+      VCR.use_cassette('resolve_vanity_url_public') do
+        result = @client.resolve_vanity_url(@public_vanity)
+        expect(result["response"]["steamid"]).to_not be_nil
+      end
+    end
+
+    it 'returns a hash containing the users steam_id_64 (private user)' do
+      VCR.use_cassette('resolve_vanity_url_private') do
+        result = @client.resolve_vanity_url(@private_vanity)
+        expect(result["response"]["steamid"]).to_not be_nil
+      end
+    end
+
+    it 'returns a hash with success of 42 which means user was not found' do
+      VCR.use_cassette('resolve_vanity_url_not_found') do
+        result = @client.resolve_vanity_url(@notfound_id)
+        expect(result["response"]["success"]).to eq(42)
+        expect(result["response"]["message"]).to eq("No match")
       end
     end
   end
