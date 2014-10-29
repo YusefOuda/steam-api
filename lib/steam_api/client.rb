@@ -18,6 +18,10 @@ module SteamApi
         return {
           error: "There was an internal server error."
         }
+      rescue URI::InvalidURIError
+        return {
+          error: "bad URI(is not URI?)"
+        }
       end
     end
   end
