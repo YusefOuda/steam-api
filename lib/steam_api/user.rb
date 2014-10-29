@@ -13,12 +13,22 @@ module SteamApi
     end
 
     # Gets information about a Steam user (or users) ban history.
-    # @param steamids [String, Array] The user (or users) steam_id_64, either in a string or array
+    # @param steamids [*String] The user (or users) steam_id_64.
     # @return [Hash] Contains a hash with information about the users ban history.
     # More information can be found at https://wiki.teamfortress.com/wiki/WebAPI/GetPlayerBans
     def get_player_bans(*steamids)
       stringified_ids = steamids.join(',')
       url = SteamApi::Urls.player_bans(stringified_ids)
+      response = get(url, key_needed: true)
+    end
+
+    # Gets player summary(or summaries) about a Steam user (or users).
+    # @param steamids [*String] The user (or users) steam_id_64.
+    # @return [Hash] Contains a hash with player summaries for each passed in ID.
+    # More information can be found at https://wiki.teamfortress.com/wiki/WebAPI/GetPlayerSummaries
+    def get_player_summaries(*steamids)
+      stringified_ids = steamids.join(',')
+      url = SteamApi::Urls.player_summaries(stringified_ids)
       response = get(url, key_needed: true)
     end
   end

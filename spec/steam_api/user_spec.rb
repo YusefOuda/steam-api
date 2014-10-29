@@ -72,4 +72,35 @@ describe SteamApi::ISteamUser do
       end
     end
   end
+
+  describe '.get_player_summaries' do
+    it 'returns a hash containing a single players summary' do
+      VCR.use_cassette('get_player_summaries_single') do
+        result = @client.get_player_summaries(@public_id)
+        expect(result["response"]["players"]).to_not be_nil
+      end
+    end
+
+    it 'returns a hash containing multiple players summaries' do
+      VCR.use_cassette('get_player_summaries_multiple') do
+        result = @client.get_player_summaries(@public_id, @private_id)
+        expect(result["response"]["players"]).to_not be_nil
+        expect(result["response"]["players"].length).to eq(2)
+      end
+    end
+
+    it 'returns a hash from the API when the user is not found' do
+      VCR.use_cassette('get_player_summaries_not_found') do
+        result = @client.get_player_summaries(@notfound_id)
+        expect(result["response"]["players"].length).to eq(0)
+      end
+    end
+
+    it 'returns a hash from the API when an invalid id is passed in' do
+      VCR.use_cassette('get_player_summaries_invalid') do
+        result = @client.get_player_summaries(@invalid_id)
+        expect(result["error"]).to_not be_nil
+      end
+    end
+  end
 end

@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=<API_KEY>&steamids=76561197995163285
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.steampowered.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Oct 2014 20:01:43 GMT
+      Expires:
+      - Wed, 29 Oct 2014 20:01:43 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '906'
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"response\": {\n\t\t\"players\": [\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197995163285\",\n\t\t\t\t\"communityvisibilitystate\": 3,\n\t\t\t\t\"profilestate\":
+        1,\n\t\t\t\t\"personaname\": \"yusef\",\n\t\t\t\t\"lastlogoff\": 1414559093,\n\t\t\t\t\"profileurl\":
+        \"http://steamcommunity.com/id/youda/\",\n\t\t\t\t\"avatar\": \"http://media.steampowered.com/steamcommunity/public/images/avatars/45/450a776d730958630478bf183e509d0fa0abc4ec.jpg\",\n\t\t\t\t\"avatarmedium\":
+        \"http://media.steampowered.com/steamcommunity/public/images/avatars/45/450a776d730958630478bf183e509d0fa0abc4ec_medium.jpg\",\n\t\t\t\t\"avatarfull\":
+        \"http://media.steampowered.com/steamcommunity/public/images/avatars/45/450a776d730958630478bf183e509d0fa0abc4ec_full.jpg\",\n\t\t\t\t\"personastate\":
+        1,\n\t\t\t\t\"realname\": \"Yusef\",\n\t\t\t\t\"primaryclanid\": \"103582791434636960\",\n\t\t\t\t\"timecreated\":
+        1198539183,\n\t\t\t\t\"personastateflags\": 0,\n\t\t\t\t\"loccountrycode\":
+        \"US\",\n\t\t\t\t\"locstatecode\": \"TX\",\n\t\t\t\t\"loccityid\": 3577\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
+    http_version: 
+  recorded_at: Wed, 29 Oct 2014 20:01:46 GMT
+recorded_with: VCR 2.9.3
