@@ -1,9 +1,9 @@
 module SteamApi
   # This module is for interacting with the ISteamUser interface of the Steam Web API.
-  # More information about this interface can be found at https://wiki.teamfortress.com/wiki/WebAPI#Methods
+  # More information about this interface can be found at https://wiki.teamfortress.com/wiki/WebAPI
   module ISteamUser
     # Gets a Steam user's friends list.
-    # @param id [String] The users steam_id_64
+    # @param steamid [String] The users steam_id_64
     # @return [Hash] Contains a hash containing friends list if user exists.
     #   In the case the user has a private profile, a hash will still be returned but it will empty
     # More information can be found at https://wiki.teamfortress.com/wiki/WebAPI/GetFriendList

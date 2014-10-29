@@ -3,6 +3,8 @@ module SteamApi
   # and with that object comes the ability to use any of the methods which call the Steam API.
   class Client
     include SteamApi::ISteamUser
+    include SteamApi::ISteamUserStats
+
     attr_reader :api_key
     # This method is the entry point to use the API. It is initialized with an API key. Only one instance of this
     # class should exist to interface with the API

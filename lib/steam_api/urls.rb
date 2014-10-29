@@ -25,7 +25,7 @@ module SteamApi
     end
 
     # A helper method which gets the base url for API call to get info about a players groups
-    # @param ids [String] A single users steam_id_64
+    # @param id [String] A single users steam_id_64
     # @return [String] An interpolated string for the API call (without the API key)
     def self.user_group_list(id)
       "http://api.steampowered.com/ISteamUser/GetUserGroupList/v1?steamid=" + id
@@ -34,8 +34,8 @@ module SteamApi
     # A helper method which gets the base url for API call to get a users steam_id_64
     # @param vanity_url [String] A single users vanity url
     # @return [String] An interpolated string for the API call (without the API key)
-    def self.vanity_url(id)
-      "http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?&vanityurl=" + id
+    def self.vanity_url(vanity_url)
+      "http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?&vanityurl=" + vanity_url
     end
   end
 end
