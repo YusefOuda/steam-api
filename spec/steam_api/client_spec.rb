@@ -7,4 +7,24 @@ describe SteamApi::Client do
       expect(client.api_key).to eq(key)
     end
   end
+
+  describe '#get' do
+    it 'should call the Steam API using the given URL and return a hash' do
+      VCR.use_cassette('client_get') do
+        client  = SteamApi::Client.new(ENV["STEAM_KEY"])
+        url = "http://api.steampowered.com/ISteamUser/GetPlayerBans/v1?steamids=76561198002572492"
+        result = client.get(url, key_needed: true)
+        expect(result["players"]).to_not be_nil
+      end
+    end
+
+    it 'should return a hash with an error message if the api_key is invalid' do
+      VCR.use_cassette('client_get_invalid') do
+        client = SteamApi::Client.new("9a8sf769ds9f7 7f9asd")
+        url = "http://api.steampowered.com/ISteamUser/GetPlayerBans/v1?steamids=76561198002572492"
+        result = client.get(url, key_needed: true)
+        expect(result["error"]).to_not be_nil
+      end
+    end
+  end
 end

@@ -6,6 +6,7 @@ require "net/http"
 require "pry-byebug"
 require "json"
 
+# The base module for all other modules and classes
 module SteamApi
 
 end

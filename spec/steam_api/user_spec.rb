@@ -29,7 +29,7 @@ describe SteamApi::ISteamUser do
         result = @client.get_friend_list(@notfound_id)
         expect(result).to be_a(Hash)
         expect(result["friendslist"]).to be_nil 
-        expect(result[:error]).to be_a(String)     
+        expect(result["error"]).to be_a(String)     
       end
     end
 
@@ -38,7 +38,7 @@ describe SteamApi::ISteamUser do
         result = @client.get_friend_list(@invalid_id)
         expect(result).to be_a(Hash)
         expect(result["friendslist"]).to be_nil 
-        expect(result[:error]).to be_a(String)
+        expect(result["error"]).to be_a(String)
       end
     end
   end
@@ -68,7 +68,7 @@ describe SteamApi::ISteamUser do
     it "returns a hash containing error message when it is invalid id" do
       VCR.use_cassette('get_player_bans_invalid') do
         result = @client.get_player_bans(@invalid_id)
-        expect(result[:error]).to be_a(String)
+        expect(result["error"]).to be_a(String)
       end
     end
   end
