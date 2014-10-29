@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=<API_KEY>&relationship=friend&steamid=76561198002572492
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.steampowered.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Wed, 29 Oct 2014 18:19:06 GMT
+      Expires:
+      - Wed, 29 Oct 2014 18:19:06 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '4'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+
+        }
+    http_version: 
+  recorded_at: Wed, 29 Oct 2014 18:19:09 GMT
+recorded_with: VCR 2.9.3

@@ -1,6 +1,7 @@
 require "steam_api/version"
 require "steam_api/user"
 require "steam_api/client"
+require "steam_api/urls"
 require "net/http"
 require "pry-byebug"
 require "json"

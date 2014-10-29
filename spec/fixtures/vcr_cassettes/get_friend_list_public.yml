@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=<API_KEY>&relationship=friend&steamid=76561197995163285
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.steampowered.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Oct 2014 18:19:06 GMT
+      Expires:
+      - Wed, 29 Oct 2014 18:19:06 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '4041'
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"friendslist\": {\n\t\t\"friends\": [\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197964492524\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1346208530\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197965105520\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1414217226\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197967631861\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1310105798\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197969621018\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1385428609\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197973955570\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1409359757\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197981740984\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1309677396\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197982655590\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1404335144\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197985147503\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1404602542\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197985618017\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1356850023\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197992028918\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1410735652\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197996145212\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1260160292\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198000810665\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1411394664\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198007564576\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1321781440\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198012910635\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1342490574\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198025003187\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1344111872\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198044542019\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1309645056\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198044545793\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1309635267\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198044853901\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1310104943\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198044982501\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1393212148\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198055140157\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1365083310\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198057949316\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1397012483\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198063983512\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1338350006\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198065529991\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1341811022\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198067069792\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1342131163\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198068074519\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1343373394\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198068482054\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1343880554\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198068543516\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1343879108\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198077586181\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1403937064\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198092431580\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1399270886\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198093541445\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1371623796\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198094138840\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1403969911\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198099069335\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1393277131\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198105524290\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1378068269\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198125097476\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1408821813\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198125799408\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1391838728\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198126933891\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1396765117\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198160382109\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1414297868\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
+    http_version: 
+  recorded_at: Wed, 29 Oct 2014 18:19:08 GMT
+recorded_with: VCR 2.9.3

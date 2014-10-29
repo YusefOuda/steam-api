@@ -8,7 +8,8 @@ module SteamApi
       @api_key = api_key
     end
 
-    def get(url)
+    def get(url, key_needed: true)
+      url = add_key url if key_needed
       begin
         uri = URI(url)
         response = Net::HTTP.get_response(uri)
@@ -23,6 +24,11 @@ module SteamApi
           error: "bad URI(is not URI?)"
         }
       end
+    end
+
+    private
+    def add_key(url)
+      url + "&key=" + @api_key
     end
   end
 end
