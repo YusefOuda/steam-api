@@ -31,5 +31,14 @@ module SteamApi
       url = SteamApi::Urls.player_summaries(stringified_ids)
       response = get(url, key_needed: true)
     end
+
+    # Gets a list of users groups if the user has a public profile
+    # @param steamid [String] The user's steam_id_64
+    # @return [Hash] Contains a hash with a list of the users groups
+    # More information can be found at https://wiki.teamfortress.com/wiki/WebAPI/GetUserGroupList
+    def get_user_group_list(steamid)
+      url = SteamApi::Urls.user_group_list(steamid)
+      response = get(url, key_needed: true)
+    end
   end
 end

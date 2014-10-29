@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.steampowered.com/ISteamUser/GetUserGroupList/v1?key=<API_KEY>&steamid=76561198002572492
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.steampowered.com
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Date:
+      - Wed, 29 Oct 2014 20:52:55 GMT
+      Expires:
+      - Wed, 29 Oct 2014 20:52:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '70'
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"response\": {\n\t\t\"success\": false,\n\t\t\"error\": \"Private
+        profile\"\n\t}\n}"
+    http_version: 
+  recorded_at: Wed, 29 Oct 2014 20:52:59 GMT
+recorded_with: VCR 2.9.3

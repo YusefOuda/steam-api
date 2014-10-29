@@ -11,17 +11,24 @@ module SteamApi
     end
 
     # A helper method which gets the base url for API call to get info about player bans
-    # @param ids [String, Array] Either a single steam_id_64 as a string or array of multiple steam_id_64's
+    # @param ids [String] A string containing a single steam_id_64 or multiple comma delimited steam_id_64s
     # @return [String] An interpolated string for the API call (without the API key)
     def self.player_bans(ids)
       "http://api.steampowered.com/ISteamUser/GetPlayerBans/v1?&steamids=" + ids
     end
 
     # A helper method which gets the base url for API call to get info about player summaries
-    # @param ids [String, Array] Either a single steam_id_64 as a string or array of multiple steam_id_64's
+    # @param ids [String] A string containing a single steam_id_64 or multiple comma delimited steam_id_64s
     # @return [String] An interpolated string for the API call (without the API key)
     def self.player_summaries(ids)
       "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?&steamids=" + ids
+    end
+
+    # A helper method which gets the base url for API call to get info about a players groups
+    # @param ids [String] A single users steam_id_64
+    # @return [String] An interpolated string for the API call (without the API key)
+    def self.user_group_list(id)
+      "http://api.steampowered.com/ISteamUser/GetUserGroupList/v1?steamid=" + id
     end
   end
 end

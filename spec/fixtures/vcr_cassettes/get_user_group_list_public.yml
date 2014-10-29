@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.steampowered.com/ISteamUser/GetUserGroupList/v1?key=<API_KEY>&steamid=76561197995163285
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.steampowered.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Oct 2014 20:52:55 GMT
+      Expires:
+      - Wed, 29 Oct 2014 20:52:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '252'
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"response\": {\n\t\t\"success\": true,\n\t\t\"groups\": [\n\t\t\t{\n\t\t\t\t\"gid\":
+        \"4458711\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"gid\": \"5115552\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"gid\":
+        \"5151157\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"gid\": \"5274870\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"gid\":
+        \"5590657\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"gid\": \"6473357\"\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
+    http_version: 
+  recorded_at: Wed, 29 Oct 2014 20:52:59 GMT
+recorded_with: VCR 2.9.3

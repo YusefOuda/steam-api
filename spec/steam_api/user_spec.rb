@@ -103,4 +103,34 @@ describe SteamApi::ISteamUser do
       end
     end
   end
+
+  describe '.get_user_group_list' do
+    it 'returns a hash which contains the users list of groups (public)' do
+      VCR.use_cassette('get_user_group_list_public') do
+        result = @client.get_user_group_list(@public_id)
+        expect(result["response"]["groups"]).to_not be_nil
+      end
+    end
+
+    it 'returns a hash which has success: false if the user is private' do
+      VCR.use_cassette('get_user_group_list_private') do
+        result = @client.get_user_group_list(@private_id)
+        expect(result["response"]["success"]).to be false
+      end
+    end
+
+    it 'returns a hash with an error message if the user was not found' do
+      VCR.use_cassette('get_user_group_list_not_found') do
+        result = @client.get_user_group_list(@notfound_id)
+        expect(result["error"]).to_not be_nil
+      end
+    end
+
+    it 'returns a hash with an error message if there was an invalid id' do
+      VCR.use_cassette('get_user_group_list_not_found') do
+        result = @client.get_user_group_list(@invalid_id)
+        expect(result["error"]).to_not be_nil
+      end
+    end
+  end
 end
