@@ -21,9 +21,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 30 Oct 2014 16:05:43 GMT
+      - Thu, 30 Oct 2014 17:15:48 GMT
       Expires:
-      - Thu, 30 Oct 2014 16:10:43 GMT
+      - Thu, 30 Oct 2014 17:20:48 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -403,5 +403,5 @@ http_interactions:
         \"WIN_MAP_DE_TRAIN\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"name\":
         \"KILL_ENEMY_GALILAR\",\n\t\t\t\t\"achieved\": 1\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
     http_version: 
-  recorded_at: Thu, 30 Oct 2014 16:05:44 GMT
+  recorded_at: Thu, 30 Oct 2014 17:15:50 GMT
 recorded_with: VCR 2.9.3

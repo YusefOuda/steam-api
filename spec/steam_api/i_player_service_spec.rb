@@ -69,4 +69,36 @@ describe SteamApi::IPlayerService do
       end
     end
   end
+
+  describe '#get_steam_level' do
+    it 'returns a hash containing the users steam level' do
+      VCR.use_cassette('get_steam_level') do
+        result = @client.get_steam_level(@public_id)
+        expect(result["response"]["player_level"]).to_not be_nil
+      end
+    end
+
+    it 'returns a hash containing the users steam level (with private profile)' do
+      VCR.use_cassette('get_steam_level_private') do
+        result = @client.get_steam_level(@private_id)
+        expect(result["response"]["player_level"]).to_not be_nil
+      end
+    end
+  end
+
+  describe '#get_badges' do
+    it 'returns a hash containing info about the users badges' do
+      VCR.use_cassette('get_badges') do
+        result = @client.get_badges(@public_id)
+        expect(result["response"]["badges"].size).to be > 0
+      end
+    end
+
+    it 'returns an empty hash if the user has a private profile' do
+      VCR.use_cassette('get_badges_private') do
+        result = @client.get_badges(@private_id)
+        expect(result["response"].size).to eq(0)
+      end
+    end
+  end
 end

@@ -25,7 +25,7 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Thu, 30 Oct 2014 16:05:45 GMT
+      - Thu, 30 Oct 2014 17:15:49 GMT
       Expires:
       - Mon, 26 Jul 1997 05:00:00 GMT
       Cache-Control:
@@ -42,5 +42,5 @@ http_interactions:
         </body>
         </html>
     http_version: 
-  recorded_at: Thu, 30 Oct 2014 16:05:46 GMT
+  recorded_at: Thu, 30 Oct 2014 17:15:50 GMT
 recorded_with: VCR 2.9.3

@@ -21,9 +21,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 30 Oct 2014 16:05:25 GMT
+      - Thu, 30 Oct 2014 17:15:40 GMT
       Expires:
-      - Thu, 06 Nov 2014 16:05:25 GMT
+      - Thu, 06 Nov 2014 17:15:40 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -226,5 +226,5 @@ http_interactions:
         \"WIN_MAP_DE_CBBLE\",\n\t\t\t\t\"percent\": 0.00047394278226420283\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"name\":
         \"\",\n\t\t\t\t\"percent\": 0\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
     http_version: 
-  recorded_at: Thu, 30 Oct 2014 16:05:26 GMT
+  recorded_at: Thu, 30 Oct 2014 17:15:42 GMT
 recorded_with: VCR 2.9.3

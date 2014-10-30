@@ -21,9 +21,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 30 Oct 2014 16:05:18 GMT
+      - Thu, 30 Oct 2014 17:15:30 GMT
       Expires:
-      - Thu, 30 Oct 2014 16:05:18 GMT
+      - Thu, 30 Oct 2014 17:15:30 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -88,5 +88,5 @@ http_interactions:
         \"76561198160382109\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
         1414297868\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
     http_version: 
-  recorded_at: Thu, 30 Oct 2014 16:05:19 GMT
+  recorded_at: Thu, 30 Oct 2014 17:15:31 GMT
 recorded_with: VCR 2.9.3

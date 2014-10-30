@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.steampowered.com/IPlayerService/GetBadges/v1?key=<API_KEY>&steamid=76561197995163285
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.steampowered.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Eresult:
+      - '1'
+      Date:
+      - Thu, 30 Oct 2014 17:15:29 GMT
+      Expires:
+      - Thu, 30 Oct 2014 17:15:29 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2495'
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"response\": {\n\t\t\"badges\": [\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        16,\n\t\t\t\t\"level\": 51,\n\t\t\t\t\"completion_time\": 1404061200,\n\t\t\t\t\"xp\":
+        150,\n\t\t\t\t\"scarcity\": 32668\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        2,\n\t\t\t\t\"level\": 2,\n\t\t\t\t\"completion_time\": 1393211265,\n\t\t\t\t\"xp\":
+        200,\n\t\t\t\t\"scarcity\": 2041165\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        15,\n\t\t\t\t\"level\": 2,\n\t\t\t\t\"completion_time\": 1380128986,\n\t\t\t\t\"xp\":
+        150,\n\t\t\t\t\"scarcity\": 421848\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        8,\n\t\t\t\t\"level\": 1,\n\t\t\t\t\"completion_time\": 1356749036,\n\t\t\t\t\"xp\":
+        100,\n\t\t\t\t\"scarcity\": 741879\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        7,\n\t\t\t\t\"level\": 3,\n\t\t\t\t\"completion_time\": 1342125512,\n\t\t\t\t\"xp\":
+        100,\n\t\t\t\t\"scarcity\": 261763\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        6,\n\t\t\t\t\"level\": 1,\n\t\t\t\t\"completion_time\": 1324883068,\n\t\t\t\t\"xp\":
+        51,\n\t\t\t\t\"scarcity\": 2746859\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        13,\n\t\t\t\t\"level\": 223,\n\t\t\t\t\"completion_time\": 1198539183,\n\t\t\t\t\"xp\":
+        468,\n\t\t\t\t\"scarcity\": 419910\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        1,\n\t\t\t\t\"level\": 6,\n\t\t\t\t\"completion_time\": 1198539183,\n\t\t\t\t\"xp\":
+        300,\n\t\t\t\t\"scarcity\": 21469632\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        1,\n\t\t\t\t\"appid\": 245070,\n\t\t\t\t\"level\": 2,\n\t\t\t\t\"completion_time\":
+        1374423868,\n\t\t\t\t\"xp\": 200,\n\t\t\t\t\"communityitemid\": \"81812935\",\n\t\t\t\t\"border_color\":
+        0,\n\t\t\t\t\"scarcity\": 269923\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        1,\n\t\t\t\t\"appid\": 224480,\n\t\t\t\t\"level\": 1,\n\t\t\t\t\"completion_time\":
+        1393210832,\n\t\t\t\t\"xp\": 100,\n\t\t\t\t\"communityitemid\": \"586935365\",\n\t\t\t\t\"border_color\":
+        0,\n\t\t\t\t\"scarcity\": 15254\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\": 1,\n\t\t\t\t\"appid\":
+        730,\n\t\t\t\t\"level\": 5,\n\t\t\t\t\"completion_time\": 1393223879,\n\t\t\t\t\"xp\":
+        500,\n\t\t\t\t\"communityitemid\": \"586937296\",\n\t\t\t\t\"border_color\":
+        0,\n\t\t\t\t\"scarcity\": 469278\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        1,\n\t\t\t\t\"appid\": 219890,\n\t\t\t\t\"level\": 1,\n\t\t\t\t\"completion_time\":
+        1393212575,\n\t\t\t\t\"xp\": 100,\n\t\t\t\t\"communityitemid\": \"586964497\",\n\t\t\t\t\"border_color\":
+        0,\n\t\t\t\t\"scarcity\": 36592\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\": 1,\n\t\t\t\t\"appid\":
+        218060,\n\t\t\t\t\"level\": 1,\n\t\t\t\t\"completion_time\": 1393223411,\n\t\t\t\t\"xp\":
+        100,\n\t\t\t\t\"communityitemid\": \"587109828\",\n\t\t\t\t\"border_color\":
+        0,\n\t\t\t\t\"scarcity\": 24579\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\": 1,\n\t\t\t\t\"appid\":
+        303700,\n\t\t\t\t\"level\": 5,\n\t\t\t\t\"completion_time\": 1403970168,\n\t\t\t\t\"xp\":
+        500,\n\t\t\t\t\"communityitemid\": \"879428508\",\n\t\t\t\t\"border_color\":
+        0,\n\t\t\t\t\"scarcity\": 116562\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"badgeid\":
+        1,\n\t\t\t\t\"appid\": 35140,\n\t\t\t\t\"level\": 1,\n\t\t\t\t\"completion_time\":
+        1404513401,\n\t\t\t\t\"xp\": 100,\n\t\t\t\t\"communityitemid\": \"943525488\",\n\t\t\t\t\"border_color\":
+        0,\n\t\t\t\t\"scarcity\": 114081\n\t\t\t}\n\t\t]\n\t\t,\n\t\t\"player_xp\":
+        3119,\n\t\t\"player_level\": 20,\n\t\t\"player_xp_needed_to_level_up\": 181,\n\t\t\"player_xp_needed_current_level\":
+        3000\n\t}\n}"
+    http_version: 
+  recorded_at: Thu, 30 Oct 2014 17:15:31 GMT
+recorded_with: VCR 2.9.3

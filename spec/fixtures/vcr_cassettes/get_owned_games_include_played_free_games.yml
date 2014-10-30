@@ -23,9 +23,9 @@ http_interactions:
       X-Eresult:
       - '1'
       Date:
-      - Thu, 30 Oct 2014 16:04:57 GMT
+      - Thu, 30 Oct 2014 17:15:27 GMT
       Expires:
-      - Thu, 30 Oct 2014 16:04:57 GMT
+      - Thu, 30 Oct 2014 17:15:27 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -260,5 +260,5 @@ http_interactions:
         99\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"appid\": 24200,\n\t\t\t\t\"playtime_forever\":
         435\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
     http_version: 
-  recorded_at: Thu, 30 Oct 2014 16:04:58 GMT
+  recorded_at: Thu, 30 Oct 2014 17:15:29 GMT
 recorded_with: VCR 2.9.3

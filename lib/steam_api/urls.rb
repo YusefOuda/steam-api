@@ -83,12 +83,27 @@ module SteamApi
       "http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1?&steamid=" + userid + "&count=#{count}"
     end
 
-    # A helper method which gets the base url for API call to get info about users recently played games
+    # A helper method which gets the base url for API call to get a list of users owned games
     # @param userid [String] A single user id 64
-    # @param count [Fixnum] The max number of games to find
+    # @param include_appinfo [Boolean] (Optional) A boolean indicating whether to include information about the game (name, pictures, playtime)
+    # @param include_played_free_games [Boolean] (Optional) A boolean indicating whether to include free to play games
     # @return [String] An interpolated string for the API call (without the API key)
     def self.owned_games(userid, include_appinfo, include_played_free_games)
       "http://api.steampowered.com/IPlayerService/GetOwnedGames/v1?&steamid=" + userid + "&include_played_free_games=#{include_played_free_games}&include_appinfo=#{include_appinfo}"
+    end
+
+    # A helper method which gets the base url for API call to get a users Steam level
+    # @param userid [String] A single user Steam id 64
+    # @return [String] An interpolated string for the API call (without the API key)
+    def self.steam_level(userid)
+      "http://api.steampowered.com/IPlayerService/GetSteamLevel/v1?&steamid=" + userid
+    end
+
+    # A helper method which gets the base url for API call to get users badges
+    # @param userid [String] A single user Steam id 64
+    # @return [String] An interpolated string for the API call (without the API key)
+    def self.badges(userid)
+      "http://api.steampowered.com/IPlayerService/GetBadges/v1?&steamid=" + userid
     end
   end
 end

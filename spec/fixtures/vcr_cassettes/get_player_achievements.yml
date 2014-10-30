@@ -21,9 +21,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 30 Oct 2014 16:05:30 GMT
+      - Thu, 30 Oct 2014 17:15:43 GMT
       Expires:
-      - Thu, 30 Oct 2014 16:10:30 GMT
+      - Thu, 30 Oct 2014 17:20:43 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -201,5 +201,5 @@ http_interactions:
         \"KILL_ENEMY_GALILAR\",\n\t\t\t\t\"achieved\": 1\n\t\t\t}\n\t\t]\n\t\t,\n\t\t\"success\":
         true\n\t}\n}"
     http_version: 
-  recorded_at: Thu, 30 Oct 2014 16:05:31 GMT
+  recorded_at: Thu, 30 Oct 2014 17:15:45 GMT
 recorded_with: VCR 2.9.3

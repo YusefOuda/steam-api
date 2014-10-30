@@ -21,9 +21,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 30 Oct 2014 16:05:20 GMT
+      - Thu, 30 Oct 2014 17:15:37 GMT
       Expires:
-      - Thu, 30 Oct 2014 16:05:20 GMT
+      - Thu, 30 Oct 2014 17:15:37 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -35,5 +35,5 @@ http_interactions:
         \"5151157\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"gid\": \"5274870\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"gid\":
         \"5590657\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"gid\": \"6473357\"\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
     http_version: 
-  recorded_at: Thu, 30 Oct 2014 16:05:21 GMT
+  recorded_at: Thu, 30 Oct 2014 17:15:39 GMT
 recorded_with: VCR 2.9.3

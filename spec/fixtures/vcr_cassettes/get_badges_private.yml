@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=12345
+    uri: http://api.steampowered.com/IPlayerService/GetBadges/v1?key=<API_KEY>&steamid=76561198002572492
     body:
       encoding: US-ASCII
       string: ''
@@ -17,20 +17,22 @@ http_interactions:
       - api.steampowered.com
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
+      X-Eresult:
+      - '15'
       Date:
-      - Thu, 30 Oct 2014 17:15:42 GMT
+      - Thu, 30 Oct 2014 17:15:29 GMT
       Expires:
-      - Thu, 30 Oct 2014 17:15:42 GMT
+      - Thu, 30 Oct 2014 17:15:29 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '36'
+      - '22'
     body:
       encoding: UTF-8
-      string: "{\n\t\"response\": {\n\t\t\"result\": 42\n\t}\n}"
+      string: "{\n\t\"response\": {\n\n\t}\n}"
     http_version: 
-  recorded_at: Thu, 30 Oct 2014 17:15:44 GMT
+  recorded_at: Thu, 30 Oct 2014 17:15:31 GMT
 recorded_with: VCR 2.9.3
