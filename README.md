@@ -31,7 +31,7 @@ client = SteamApi::Client.new("###INSERT STEAM API KEY HERE###")
 This will allow you to call methods such as:
 
 ```ruby
-client.get_friend_list('2834798123')
+client.get_friend_list('76561197995163285')
 ```
 where the number that is passed in the user's SteamID64. In order to fetch a user's SteamID64, you can call:
 
