@@ -74,5 +74,21 @@ module SteamApi
     def self.user_stats_for_game(userid, appid)
       "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v2/?&appid=" + appid + "&steamid=" + userid
     end
+
+    # A helper method which gets the base url for API call to get info about users recently played games
+    # @param userid [String] A single user id 64
+    # @param count [Fixnum] The max number of games to find
+    # @return [String] An interpolated string for the API call (without the API key)
+    def self.recently_played_games(userid, count)
+      "http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1?&steamid=" + userid + "&count=#{count}"
+    end
+
+    # A helper method which gets the base url for API call to get info about users recently played games
+    # @param userid [String] A single user id 64
+    # @param count [Fixnum] The max number of games to find
+    # @return [String] An interpolated string for the API call (without the API key)
+    def self.owned_games(userid, include_appinfo, include_played_free_games)
+      "http://api.steampowered.com/IPlayerService/GetOwnedGames/v1?&steamid=" + userid + "&include_played_free_games=#{include_played_free_games}&include_appinfo=#{include_appinfo}"
+    end
   end
 end

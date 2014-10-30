@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.steampowered.com/ISteamUser/GetUserGroupList/v1?key=<API_KEY>&steamid=76561198002572492
+    uri: http://api.steampowered.com/IPlayerService/GetOwnedGames/v1?include_appinfo=0&include_played_free_games=0&key=<API_KEY>&steamid=76561198002572492
     body:
       encoding: US-ASCII
       string: ''
@@ -17,21 +17,22 @@ http_interactions:
       - api.steampowered.com
   response:
     status:
-      code: 403
-      message: Forbidden
+      code: 200
+      message: OK
     headers:
+      X-Eresult:
+      - '15'
       Date:
-      - Thu, 30 Oct 2014 16:05:20 GMT
+      - Thu, 30 Oct 2014 16:04:56 GMT
       Expires:
-      - Thu, 30 Oct 2014 16:05:20 GMT
+      - Thu, 30 Oct 2014 16:04:56 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '70'
+      - '22'
     body:
       encoding: UTF-8
-      string: "{\n\t\"response\": {\n\t\t\"success\": false,\n\t\t\"error\": \"Private
-        profile\"\n\t}\n}"
+      string: "{\n\t\"response\": {\n\n\t}\n}"
     http_version: 
-  recorded_at: Thu, 30 Oct 2014 16:05:21 GMT
+  recorded_at: Thu, 30 Oct 2014 16:04:57 GMT
 recorded_with: VCR 2.9.3

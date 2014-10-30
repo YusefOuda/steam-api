@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1?count=0&key=<API_KEY>&steamid=76561197995163285
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.steampowered.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Eresult:
+      - '1'
+      Date:
+      - Thu, 30 Oct 2014 16:04:54 GMT
+      Expires:
+      - Thu, 30 Oct 2014 16:04:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '810'
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"response\": {\n\t\t\"total_count\": 3,\n\t\t\"games\": [\n\t\t\t{\n\t\t\t\t\"appid\":
+        204300,\n\t\t\t\t\"name\": \"Awesomenauts\",\n\t\t\t\t\"playtime_2weeks\":
+        697,\n\t\t\t\t\"playtime_forever\": 697,\n\t\t\t\t\"img_icon_url\": \"4996933171d0804bd0ceb7b9a0e224b3139d18ba\",\n\t\t\t\t\"img_logo_url\":
+        \"a2eba6157703c60bfcc199f06df5f1568c9835bb\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"appid\":
+        730,\n\t\t\t\t\"name\": \"Counter-Strike: Global Offensive\",\n\t\t\t\t\"playtime_2weeks\":
+        650,\n\t\t\t\t\"playtime_forever\": 42470,\n\t\t\t\t\"img_icon_url\": \"69f7ebe2735c366c65c0b33dae00e12dc40edbe4\",\n\t\t\t\t\"img_logo_url\":
+        \"d0595ff02f5c79fd19b06f4d6165c3fda2372820\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"appid\":
+        40800,\n\t\t\t\t\"name\": \"Super Meat Boy\",\n\t\t\t\t\"playtime_2weeks\":
+        2,\n\t\t\t\t\"playtime_forever\": 456,\n\t\t\t\t\"img_icon_url\": \"64eec20c9375e7473b964f0d0bc41d19f03add3b\",\n\t\t\t\t\"img_logo_url\":
+        \"70f084857297d5fdd96d019db3a990d6d9ec64f1\"\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
+    http_version: 
+  recorded_at: Thu, 30 Oct 2014 16:04:55 GMT
+recorded_with: VCR 2.9.3

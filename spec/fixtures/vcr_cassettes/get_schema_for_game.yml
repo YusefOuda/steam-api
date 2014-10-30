@@ -21,9 +21,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 30 Oct 2014 15:04:26 GMT
+      - Thu, 30 Oct 2014 16:05:41 GMT
       Expires:
-      - Thu, 30 Oct 2014 16:04:26 GMT
+      - Thu, 30 Oct 2014 17:05:41 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -1201,5 +1201,5 @@ http_interactions:
         \"Kill 250 enemies with the Galil AR\",\n\t\t\t\t\t\"icon\": \"http://media.steampowered.com/steamcommunity/public/images/apps/730/a3a32715a970dd3a8c174bc57ee1b2204d9d29b1.jpg\",\n\t\t\t\t\t\"icongray\":
         \"http://media.steampowered.com/steamcommunity/public/images/apps/730/61139f5e158c8af4592118802ad1ceb74cd40b57.jpg\"\n\t\t\t\t}\n\t\t\t]\n\t\t\t\n\t\t}\n\t}\n}"
     http_version: 
-  recorded_at: Thu, 30 Oct 2014 15:04:28 GMT
+  recorded_at: Thu, 30 Oct 2014 16:05:43 GMT
 recorded_with: VCR 2.9.3
