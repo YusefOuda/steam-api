@@ -1,8 +1,12 @@
 describe SteamApi::ISteamUserStats do
   before(:all) do
+    @public_id = '76561197995163285'
+    @private_id = '76561198002572492'
     @game_id = '730'
     @notfound_game_id = '12345'
     @invalid_game_id = '123 45'
+    @notfound_id = '67734658237465083465238745693'
+    @invalid_id = '76561199623423 72348002572492'
     @client = SteamApi::Client.new(ENV["STEAM_KEY"])
   end
 
@@ -47,6 +51,39 @@ describe SteamApi::ISteamUserStats do
       VCR.use_cassette('get_number_of_current_players_not_found') do
         result = @client.get_number_of_current_players(@notfound_game_id)
         expect(result["response"]["result"]).to eq(42)
+      end
+    end
+  end
+
+  describe '#get_player_achievements' do
+    it 'returns a hash containing info about players achievement completion' do
+      VCR.use_cassette('get_player_achievements') do
+        result = @client.get_player_achievements(@public_id, @game_id)
+        expect(result["playerstats"]["achievements"]).to_not be_nil
+      end
+    end
+
+    it 'returns a hash containing an error message if user is private' do
+      VCR.use_cassette('get_player_achievements_private') do
+        result = @client.get_player_achievements(@private_id, @game_id)
+        expect(result["playerstats"]["error"]).to_not be_nil
+        expect(result["playerstats"]["success"]).to be false
+      end
+    end
+
+    it 'returns a hash containing an error message if user does not exist' do
+      VCR.use_cassette('get_player_achievements_user_not_found') do
+        result = @client.get_player_achievements(@notfound_id, @game_id)
+        expect(result["playerstats"]["error"]).to_not be_nil
+        expect(result["playerstats"]["success"]).to be false
+      end
+    end
+
+    it 'returns a hash containing an error message if the game does not have stats (or does not exist)' do
+      VCR.use_cassette('get_player_achievements_game_no_stats') do
+        result = @client.get_player_achievements(@public_id, @notfound_game_id)
+        expect(result["playerstats"]["error"]).to_not be_nil
+        expect(result["playerstats"]["success"]).to be false
       end
     end
   end

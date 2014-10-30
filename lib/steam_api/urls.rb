@@ -45,8 +45,19 @@ module SteamApi
       "http://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?&gameid=" + id
     end
 
+    # A helper method which gets the base url for API call to get current number of players for an app
+    # @param id [String] A single Steam app id
+    # @return [String] An interpolated string for the API call (without the API key)
     def self.number_of_current_players(id)
       "http://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=" + id
+    end
+
+    # A helper method which gets the base url for API call to get achievement completion for a player and app
+    # @param userid [String] A single user steam id 64
+    # @param appid [String] A single Steam app id
+    # @return [String] An interpolated string for the API call (without the API key)
+    def self.player_achievements(userid, appid)
+      "http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v1/?&steamid=" + userid + '&appid=' + appid
     end
   end
 end

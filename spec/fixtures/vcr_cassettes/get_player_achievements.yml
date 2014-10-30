@@ -1,0 +1,205 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v1/?appid=730&key=<API_KEY>&steamid=76561197995163285
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.steampowered.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Oct 2014 00:06:31 GMT
+      Expires:
+      - Thu, 30 Oct 2014 00:11:31 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '11101'
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"playerstats\": {\n\t\t\"steamID\": \"76561197995163285\",\n\t\t\"gameName\":
+        \"Counter-Strike: Global Offensive\",\n\t\t\"achievements\": [\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_BOMB_PLANT\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"BOMB_PLANT_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"BOMB_DEFUSE_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_MED\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_HIGH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"BOMB_DEFUSE_CLOSE_CALL\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_BOMB_DEFUSER\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_BOMB_DEFUSE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"BOMB_PLANT_IN_25_SECONDS\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_ROUNDS_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_ROUNDS_MED\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_ROUNDS_HIGH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GIVE_DAMAGE_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GIVE_DAMAGE_MED\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GIVE_DAMAGE_HIGH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILLING_SPREE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_WITH_OWN_GUN\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"RESCUE_HOSTAGES_LOW\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"RESCUE_HOSTAGES_MED\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"RESCUE_ALL_HOSTAGES\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"FAST_HOSTAGE_RESCUE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_TWO_WITH_ONE_SHOT\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"EARN_MONEY_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"EARN_MONEY_MED\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"EARN_MONEY_HIGH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"DEAD_GRENADE_KILL\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_DEAGLE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_GLOCK\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_ELITE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_FIVESEVEN\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"META_PISTOL\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_AWP\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_AK47\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_M4A1\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_AUG\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_FAMAS\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_G3SG1\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"META_RIFLE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_P90\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_MAC10\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_UMP45\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"META_SMG\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_XM1014\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"META_SHOTGUN\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_HEGRENADE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_KNIFE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_M249\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"META_WEAPONMASTER\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_TEAM\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILLS_WITH_MULTIPLE_GUNS\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_HOSTAGE_RESCUER\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"LAST_PLAYER_ALIVE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_LAST_BULLET\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILLING_SPREE_ENDER\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"BREAK_WINDOWS\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"HEADSHOTS\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"DAMAGE_NO_KILL\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_LOW_DAMAGE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_RELOADING\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_BLINDED\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMIES_WHILE_BLIND\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILLS_ENEMY_WEAPON\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_WITH_EVERY_WEAPON\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"SURVIVE_GRENADE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_KNIFE_FIGHTS_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_KNIFE_FIGHTS_HIGH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILLED_DEFUSER_WITH_GRENADE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"HIP_SHOT\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_SNIPER_WITH_SNIPER\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_SNIPER_WITH_KNIFE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_SNIPERS\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_WHEN_AT_LOW_HEALTH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GRENADE_MULTIKILL\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"PISTOL_ROUND_KNIFE_KILL\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"FAST_ROUND_WIN\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_PISTOLROUNDS_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_PISTOLROUNDS_MED\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_PISTOLROUNDS_HIGH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"BOMB_MULTIKILL\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GOOSE_CHASE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_BOMB_PLANT_AFTER_RECOVERY\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"SURVIVE_MANY_ATTACKS\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"LOSSLESS_EXTERMINATION\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"FLAWLESS_VICTORY\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_DUAL_DUEL\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"UNSTOPPABLE_FORCE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"IMMOVABLE_OBJECT\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"HEADSHOTS_IN_ROUND\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_CS_ITALY\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_CS_OFFICE\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_AZTEC\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_DUST\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_DUST2\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_INFERNO\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_NUKE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_SHORTTRAIN\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_WHILE_IN_AIR\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_IN_AIR\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILLER_AND_ENEMY_IN_AIR\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"SILENT_WIN\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"BLOODLESS_VICTORY\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"DONATE_WEAPONS\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_ROUNDS_WITHOUT_BUYING\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"DEFUSE_DEFENSE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_BOMB_PICKUP\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"DOMINATIONS_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"DOMINATIONS_HIGH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"DOMINATION_OVERKILLS_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"DOMINATION_OVERKILLS_HIGH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"REVENGES_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"REVENGES_HIGH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"CONCURRENT_DOMINATIONS\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"DOMINATION_OVERKILLS_MATCH\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"EXTENDED_DOMINATION\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMIES_WHILE_BLIND_HARD\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"CAUSE_FRIENDLY_FIRE_WITH_FLASHBANG\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"AVENGE_FRIEND\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_KILL_KNIFER\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_EVERY_GUNGAME_MAP\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_AR_SHOOTS\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"TR_BOMB_PLANT_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"TR_BOMB_DEFUSE_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_LAKE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_SAFEHOUSE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_SUGARCANE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_STMARC\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_KNIFE_KILL_KNIFER\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_SMG_KILL_KNIFER\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_ROUNDS_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_ROUNDS_MED\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_ROUNDS_HIGH\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_GUN_GAME_ROUNDS_LOW\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_GUN_GAME_ROUNDS_MED\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_GUN_GAME_ROUNDS_HIGH\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_GUN_GAME_ROUNDS_EXTREME\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_GUN_GAME_ROUNDS_ULTIMATE\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"PLAY_EVERY_GUNGAME_MAP\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_RAMPAGE\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_FIRST_KILL\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_FIRST_THING_FIRST\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_TARGET_SECURED\",\n\t\t\t\t\"achieved\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"ONE_SHOT_ONE_KILL\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"GUN_GAME_CONSERVATIONIST\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"BASE_SCAMPER\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"BORN_READY\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"STILL_ALIVE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"MEDALIST\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_BANK\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_AR_BAGGAGE\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_BIZON\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_TEC9\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_TASER\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_HKP2000\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_P250\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_SCAR20\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_SG556\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_SSG08\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_MP7\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_MP9\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_MAG7\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_SAWEDOFF\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_NOVA\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_NEGEV\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_MOLOTOV\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"WIN_MAP_DE_TRAIN\",\n\t\t\t\t\"achieved\": 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"apiname\":
+        \"KILL_ENEMY_GALILAR\",\n\t\t\t\t\"achieved\": 1\n\t\t\t}\n\t\t]\n\t\t,\n\t\t\"success\":
+        true\n\t}\n}"
+    http_version: 
+  recorded_at: Thu, 30 Oct 2014 00:06:31 GMT
+recorded_with: VCR 2.9.3

@@ -21,9 +21,9 @@ http_interactions:
       message: Forbidden
     headers:
       Date:
-      - Wed, 29 Oct 2014 23:41:41 GMT
+      - Thu, 30 Oct 2014 00:06:28 GMT
       Expires:
-      - Wed, 29 Oct 2014 23:41:41 GMT
+      - Thu, 30 Oct 2014 00:06:28 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -33,5 +33,5 @@ http_interactions:
       string: "{\n\t\"response\": {\n\t\t\"success\": false,\n\t\t\"error\": \"Private
         profile\"\n\t}\n}"
     http_version: 
-  recorded_at: Wed, 29 Oct 2014 23:41:41 GMT
+  recorded_at: Thu, 30 Oct 2014 00:06:29 GMT
 recorded_with: VCR 2.9.3
