@@ -4,6 +4,7 @@ module SteamApi
   class Client
     include SteamApi::ISteamUser
     include SteamApi::ISteamUserStats
+    include SteamApi::IPlayerService
 
     attr_reader :api_key
     # This method is the entry point to use the API. It is initialized with an API key. Only one instance of this

@@ -88,4 +88,56 @@ describe SteamApi::ISteamUserStats do
     end
   end
 
+  describe '#get_schema_for_game' do
+    it 'returns a hash containing the schema for a game' do
+      VCR.use_cassette('get_schema_for_game') do
+        result = @client.get_schema_for_game(@game_id)
+        expect(result["game"]).to_not be_nil
+      end
+    end
+
+    it 'returns an empty hash if the game does not exist' do
+      VCR.use_cassette('get_schema_for_game_not_found') do
+        result = @client.get_schema_for_game(@notfound_game_id)
+        expect(result["game"]).to be_nil
+      end
+    end
+
+    it 'returns an empty hash if it is an invalid game id' do
+      VCR.use_cassette('get_schema_for_game_invalid') do
+        result = @client.get_schema_for_game(@invalid_game_id)
+        expect(result["game"]).to be_nil
+      end
+    end
+  end
+
+  describe '#get_user_stats_for_game' do
+    it 'returns a hash containing the users stats for a certain game' do
+      VCR.use_cassette('get_user_stats_for_game') do
+        result = @client.get_user_stats_for_game(@public_id, @game_id)
+        expect(result["playerstats"]).to_not be_nil
+      end
+    end
+
+    it 'returns a hash with an error message if the profile is private' do
+      VCR.use_cassette('get_user_stats_for_game_private') do
+        result = @client.get_user_stats_for_game(@private_id, @game_id)
+        expect(result["error"]).to_not be_nil
+      end
+    end
+
+    it 'returns an empty hash if the user was not found' do
+      VCR.use_cassette('get_user_stats_for_game_user_not_found') do
+        result = @client.get_user_stats_for_game(@notfound_id, @game_id)
+        expect(result.size).to eq(0)
+      end
+    end
+
+    it 'returns an empty hash if the game was not found' do
+      VCR.use_cassette('get_user_stats_for_game_game_not_found') do
+        result = @client.get_user_stats_for_game(@public_id, @notfound_game_id)
+        expect(result.size).to eq(0)
+      end
+    end
+  end
 end

@@ -59,5 +59,20 @@ module SteamApi
     def self.player_achievements(userid, appid)
       "http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v1/?&steamid=" + userid + '&appid=' + appid
     end
+
+    # A helper method which gets the base url for API call to get a schema for a game
+    # @param appid [String] A single game steam id
+    # @return [String] An interpolated string for the API call (without the API key)
+    def self.schema_for_game(appid)
+      "http://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/?&appid=" + appid
+    end
+
+    # A helper method which gets the base url for API call to get users stats for a game
+    # @param userid [String] A single user id 64
+    # @param appid [String] A single game steam id
+    # @return [String] An interpolated string for the API call (without the API key)
+    def self.user_stats_for_game(userid, appid)
+      "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v2/?&appid=" + appid + "&steamid=" + userid
+    end
   end
 end
