@@ -105,5 +105,12 @@ module SteamApi
     def self.badges(userid)
       "http://api.steampowered.com/IPlayerService/GetBadges/v1?&steamid=" + userid
     end
+
+    # A helper method which gets the base url for API call to get users badges
+    # @param userid [String] A single user Steam id 64
+    # @return [String] An interpolated string for the API call (without the API key)
+    def self.community_badge_progress(userid, badge_id)
+      "http://api.steampowered.com/IPlayerService/GetCommunityBadgeProgress/v1?&steamid=" + userid + "&badgeid=#{badge_id}"
+    end
   end
 end

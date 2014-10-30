@@ -43,6 +43,16 @@ module SteamApi
       response = get(url, key_needed: true)
     end
 
+    # Gets info about a single users progress towards community badges
+    # @param userid [String] A user's steam id 64
+    # @param badge_id [String] (Optional) A specific badge id to look for
+    # @return [Hash] Contains a hash which has the users progress
+    # More information can be found at https://wiki.teamfortress.com/wiki/WebAPI/GetCommunityBadgeProgress
+    def get_community_badge_progress(userid, badge_id: 0)
+      url = SteamApi::Urls.community_badge_progress(userid, badge_id)
+      response = get(url, key_needed: true)
+    end
+
     private
     # A method to map a boolean value to an integer
     # @param bool [Boolean] A boolean value

@@ -101,4 +101,27 @@ describe SteamApi::IPlayerService do
       end
     end
   end
+
+  describe '#get_community_badge_progress' do
+    it 'returns a hash containing information about the users comunnity badge progress' do
+      VCR.use_cassette('get_community_badge_progress') do
+        result = @client.get_community_badge_progress(@public_id)
+        expect(result["response"]["quests"]).to_not be_nil
+      end
+    end
+
+    it 'returns a hash containing information about the users comunnity badge progress for private users' do
+      VCR.use_cassette('get_community_badge_progress_private') do
+        result = @client.get_community_badge_progress(@private_id)
+        expect(result["response"]["quests"]).to_not be_nil
+      end
+    end
+
+    it 'can also take an optional paramater to look at a specific badge id' do
+      VCR.use_cassette('get_community_badge_progress_specific_badge') do
+        result = @client.get_community_badge_progress(@public_id, badge_id: 2)
+        expect(result["response"]["quests"]).to_not be_nil
+      end
+    end
+  end
 end

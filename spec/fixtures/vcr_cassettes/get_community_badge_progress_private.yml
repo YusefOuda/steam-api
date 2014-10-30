@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.steampowered.com/IPlayerService/GetCommunityBadgeProgress/v1?badgeid=0&key=<API_KEY>&steamid=76561198002572492
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.steampowered.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Eresult:
+      - '1'
+      Date:
+      - Thu, 30 Oct 2014 17:30:31 GMT
+      Expires:
+      - Thu, 30 Oct 2014 17:30:31 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1426'
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"response\": {\n\t\t\"quests\": [\n\t\t\t{\n\t\t\t\t\"questid\":
+        101,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        102,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        103,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        104,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        105,\n\t\t\t\t\"completed\": false\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        106,\n\t\t\t\t\"completed\": false\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        108,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        109,\n\t\t\t\t\"completed\": false\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        110,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        111,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        112,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        113,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        114,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        115,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        116,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        117,\n\t\t\t\t\"completed\": false\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        118,\n\t\t\t\t\"completed\": false\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        119,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        120,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        121,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        122,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        123,\n\t\t\t\t\"completed\": false\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        124,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        125,\n\t\t\t\t\"completed\": false\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        126,\n\t\t\t\t\"completed\": true\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"questid\":
+        127,\n\t\t\t\t\"completed\": true\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
+    http_version: 
+  recorded_at: Thu, 30 Oct 2014 17:30:33 GMT
+recorded_with: VCR 2.9.3
