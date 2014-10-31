@@ -30,7 +30,7 @@ module SteamApi
         return parsed
       rescue JSON::ParserError
         return {
-          "error" => "There was an internal server error."
+          "error" => "There request was OK but there was a problem parsing the response."
         }
       rescue URI::InvalidURIError
         return {
