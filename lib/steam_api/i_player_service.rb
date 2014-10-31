@@ -58,8 +58,7 @@ module SteamApi
     # @param bool [Boolean] A boolean value
     # @return [Fixnum] The mapped-to Fixnum
     def bool_to_int(bool)
-      return 1 if bool
-      return 0 
+      bool ? 1 : 0
     end
   end
 end
