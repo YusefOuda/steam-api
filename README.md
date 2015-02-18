@@ -36,7 +36,7 @@ client.get_friend_list('76561197995163285')
 where the number that is passed in the user's SteamID64. In order to fetch a user's SteamID64, you can call:
 
 ```ruby
-client.resolve_vanity_url('youda')
+client.resolve_vanity_url('##steam-username-here##')
 ```
 where the string that is passed in is the Steam username. The SteamID64 is very important if you are wishing to gather information about certain users, many of the methods implement it.
 
@@ -46,7 +46,7 @@ Information about the Steam API can be found at https://wiki.teamfortress.com/wi
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/steam_api/fork )
+1. Fork it ( https://github.com/YusefOuda/steam_api/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
